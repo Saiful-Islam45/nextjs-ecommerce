@@ -15,7 +15,7 @@ const Filter = () => {
 
   useEffect(() =>{
     dispatch(setFilter(category));
-  },[category])
+  },[category, dispatch])
 
   return (
     <div className="flex px-8  p-4">

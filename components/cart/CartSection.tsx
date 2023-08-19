@@ -7,10 +7,6 @@ const CartSection = ({ cartItems } :{cartItems: IProduct[]}) => {
     <div className="cart flex flex-col flex-[70%] bg-white rounded-xl p-5 shadow-sm">
       <div className="flex justify-between items-center w-full mb-5">
         <h1 className="font-medium text-lg sm:text-2xl">Cart</h1>
-
-        <a href="#" className="text-primaryColor no-underline">
-          View all
-        </a>
       </div>
 
       {cartItems.map((product: IProduct) => (
