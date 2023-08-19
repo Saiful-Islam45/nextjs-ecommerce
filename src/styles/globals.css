@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  transition: all 0.5s;
+}
+
+/* body {
+  fontFamily: "Poppins", sans-serif;
+} */
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +39,40 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.brand {
+  font-family: "Satisfy", cursive;
+  color: rgb(90, 91, 94);
+}
+
+#product__card img {
+  transition: 0.5s;
+}
+#product__card img:hover {
+  transform: scale(1.15) translateY(-20px);
+}
+
+#product__card .cart-btn {
+  transition: 0.5s;
+}
+
+#cart .actions button {
+  padding: 8px 10px;
+  user-select: none;
+  outline: none;
+  border: none;
+}
+
+#cart .actions p {
+  padding: 8px 14px;
+
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
 }
