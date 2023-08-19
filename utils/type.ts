@@ -38,3 +38,4 @@ export type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout
 }
  
+export const ALL_CATEGORY = "All Categories"
